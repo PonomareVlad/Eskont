@@ -45,7 +45,14 @@
 	<link rel="icon" href="http://eskont.com/favicon.ico" type="favicon.ico">
 	<link rel="shortcut icon" href="http://eskont.com/favicon.ico" type="favicon.ico">
 	<script src="js/jquery.min.js"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css" rel="stylesheet">
+	<!--	<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css" rel="stylesheet">-->
+
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
+	<link rel='stylesheet'
+		  href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
+
+
 	<link rel="stylesheet" href="css/modal.base.css">
 	<link rel="stylesheet" href="css/modal.desktop.css" media="(min-width: 1024px)">
 </head>
@@ -199,7 +206,7 @@
 				<div class="item pj-02">
 					<div>
 						<h3>Коттедж в классическом стиле на 200 кв.м.</h3>
-						<a href="project-01.html" class="project-a">Подробнее</a>
+						<a href="#test2" data-modal-open class="project-a">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -548,26 +555,26 @@
 	<div class="modal-section">
 		<div class="modal-slider">
 			<div class="swiper-container">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<div class="swiper-slide">
-						<img src="img/1920/img-9.jpg">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/1920/img-8.jpg">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/1920/plan-5-1.jpg">
-					</div>
-				</div>
-				<!-- If we need pagination -->
+				<ul class="swiper-wrapper my-gallery" itemscope>
+					<li class="swiper-slide" itemprop="associatedMedia" itemscope>
+						<a title="click to zoom-in" href="img/1920/img-9.jpg" data-size="1200x600">
+							<img src="img/1920/img-9.jpg" itemprop="thumbnail" alt="Image description"/>
+						</a>
+					</li>
+					<li class="swiper-slide" itemprop="associatedMedia" itemscope>
+						<a title="click to zoom-in" href="img/1920/img-8.jpg" data-size="1200x600">
+							<img src="img/1920/img-8.jpg" itemprop="thumbnail" alt="Image description"/>
+						</a>
+					</li>
+					<li class="swiper-slide" itemprop="associatedMedia" itemscope>
+						<a title="click to zoom-in" href="img/1920/plan-5-1.jpg" data-size="1200x600">
+							<img src="img/1920/plan-5-1.jpg" itemprop="thumbnail" alt="Image description"/>
+						</a>
+					</li>
+				</ul>
 				<div class="swiper-pagination"></div>
-
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-
+				<div title="Prev" class="swiper-button-prev"></div>
+				<div title="Next" class="swiper-button-next"></div>
 			</div>
 		</div>
 		<div class="modal-content-wrapper">
@@ -576,18 +583,123 @@
 				<p>Локация: г. Балашиха</p>
 				<p>Категория: Жилые</p>
 				<p>Участие: Разработка проектной и рабочей документации</p>
-				<p>Текст</p>
-				<p>Текст</p>
-				<p>Текст</p>
-				<p>Текст</p>
-				<p>Текст</p>
-				<p>Текст</p>
-				<p>Текст</p>
 			</div>
 		</div>
 		<a class="modal-close" href="#" data-modal-close title="Закрыть окно">Закрыть окно</a>
 	</div>
 	<a class="modal-backdrop-close" href="#" data-modal-close title="Закрыть окно">Закрыть окно</a>
+</div>
+
+<div class="modal" id="test2">
+	<div class="modal-section">
+		<div class="modal-slider">
+			<div class="swiper-container">
+				<ul class="swiper-wrapper my-gallery" itemscope>
+					<li class="swiper-slide" itemprop="associatedMedia" itemscope>
+						<a title="click to zoom-in" href="img/1920/img-4.jpg" data-size="1200x600">
+							<img src="img/1920/img-4.jpg" itemprop="thumbnail" alt="Image description"/>
+						</a>
+					</li>
+					<li class="swiper-slide" itemprop="associatedMedia" itemscope>
+						<a title="click to zoom-in" href="img/1920/img-1.jpg" data-size="1200x600">
+							<img src="img/1920/img-1.jpg" itemprop="thumbnail" alt="Image description"/>
+						</a>
+					</li>
+					<li class="swiper-slide" itemprop="associatedMedia" itemscope>
+						<a title="click to zoom-in" href="img/1920/plan-1-1.jpg" data-size="1200x600">
+							<img src="img/1920/plan-1-1.jpg" itemprop="thumbnail" alt="Image description"/>
+						</a>
+					</li>
+					<li class="swiper-slide" itemprop="associatedMedia" itemscope>
+						<a title="click to zoom-in" href="img/1920/plan-1-2.jpg" data-size="1200x600">
+							<img src="img/1920/plan-1-2.jpg" itemprop="thumbnail" alt="Image description"/>
+						</a>
+					</li>
+				</ul>
+				<div class="swiper-pagination"></div>
+				<div title="Prev" class="swiper-button-prev"></div>
+				<div title="Next" class="swiper-button-next"></div>
+			</div>
+		</div>
+		<div class="modal-content-wrapper">
+			<div class="modal-content">
+				<span class="modal-title">Коттедж в классическом стиле на 200 кв.м.</span>
+				<p>Семья молодоженов обратилась к нам с задачей - придумать дом такой архитектуры, которая придавала бы единую композицию уюта и комфорта всей территории застройки, планировочные решения учитывали перспективу пополнения, а модность стилистики ее была независима от времени. Из предложенных нами вариантов им понравился дом в этаком классическом стиле…</p>
+				<p>Дом представляет собой монолитный каркас с перегородками из газосиликатных блоков. Фасады дома отделаны клинкером теплого цвета и классической белой лепниной, кованные декоративные элементы дополняют их формообразование.</p>
+				<p>Также в проекте предусмотрены открытый гараж для двух автомобилей и крытая терраса с выходом на нее из кухни-гостиной.</p>
+				<p>Локация: Московская область</p>
+				<p>Категория: Коттеджи</p>
+				<p>Площадь: 200 кв.м.</p>
+			</div>
+		</div>
+		<a class="modal-close" href="#" data-modal-close title="Закрыть окно">Закрыть окно</a>
+	</div>
+	<a class="modal-backdrop-close" href="#" data-modal-close title="Закрыть окно">Закрыть окно</a>
+</div>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+	<!-- Background of PhotoSwipe.
+		It's a separate element, as animating opacity is faster than rgba(). -->
+	<div class="pswp__bg"></div>
+
+	<!-- Slides wrapper with overflow:hidden. -->
+	<div class="pswp__scroll-wrap">
+
+		<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+		<!-- don't modify these 3 pswp__item elements, data is added later on. -->
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+
+		<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+		<div class="pswp__ui pswp__ui--hidden">
+
+			<div class="pswp__top-bar">
+
+				<!--  Controls are self-explanatory. Order can be changed. -->
+
+				<div class="pswp__counter"></div>
+
+				<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+				<button class="pswp__button pswp__button--share" title="Share"></button>
+
+				<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+				<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+				<!-- element will get class pswp__preloader--active when preloader is running -->
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+
+			<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+			</button>
+
+			<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+			</button>
+
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+
+		</div>
+
+	</div>
+
 </div>
 
 <script src="js/owl.carousel.min.js"></script>
@@ -656,7 +768,10 @@
 	<div><img src="https://mc.yandex.ru/watch/50328286" style="position:absolute; left:-9999px;" alt=""/></div>
 </noscript>
 <!-- /Yandex.Metrika counter -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
-<script src="js/modal.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
+<script src="js/modal.js" defer></script>
 </body>
 </html>

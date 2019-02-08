@@ -1,0 +1,95 @@
+/*==================================
+             SWIPER
+===================================*/
+/* remove bullet and space from the list */
+ul.swiper-wrapper {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Swiper styles */
+.swiper-container {
+    max-width: 100%;
+}
+
+/* responive image */
+.swiper-container img {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+
+    /* Remove this if you want 1 slide perview - than change slidesPerView js-option to 1 -or- 2+ instead of 'auto' */
+    width: 80%;
+}
+
+/* Swiper custom pagination */
+.swiper-pagination-bullet {
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: black;
+}
+
+/*======================================================
+         CODEPEN STYLES - Remove this from your code
+=======================================================*/
+.swiper-docs {
+    font-family: "Roboto", sans-serif;
+}
+
+.swiper-docs #docs h3 {
+    margin-bottom: 0px;
+    webkit-margin-after: 0em;
+}
+
+.swiper-docs #docs ol li:not(:first-of-type) {
+
+    border-top: thin solid rgba(203, 202, 204, 1);
+}
+
+.swiper-docs #docs p {
+    -webkit-margin-before: 1em;
+    line-height: 22px;
+    font-size: 0.9em;
+}
+
+.swiper-docs section #docs code {
+    padding: 0;
+    padding: 3px 5px;
+    margin: 0;
+    background: #f2f2f2;
+    border-radius: 2px;
+}
+
+.swiper-docs #docs ol li {
+    margin-bottom: 12px;
+}
+
+.swiper-docs {
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 15px;
+}
+
+.swiper-docs a {
+    color: #4285f4;
+}
+
+
+code {
+    color: #e83e8c;
+    word-break: break-word;
+}

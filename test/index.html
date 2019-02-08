@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="swiper-docs">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Slider and Lightbox :: slider (swiper.js) & Lightbox gallery (photoswipe.js)</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
+	<link rel='stylesheet'
+		  href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+<h1>
+	<a title="swiper.js" href="http://idangero.us/swiper/" target="_blank">Swiper.js (4.4.6)</a>
+	&
+	<a title="photoswipe" href="http://photoswipe.com/" target="_blank">Photoswipe.js (4.1.1)</a>
+	- Mobile Native feel slider gallery
+</h1>
+<p>Combine two of the most powerfull JS plugins (Endless options / Great docs / Fast / Modern / Mobile freindly) - <a
+		title="swiper.js" href="http://idangero.us/swiper/" target="_blank">SWIPER</a> IS PERFECT FOR THIS IDEA BEACUSE
+	OF ITS unique <code>preventClicks</code> Parameter (Prevent accidental unwanted clicks on links during swiping) -
+	<strong>Works like magic</strong>. Also its really <b>hard</b> to find - Code example of working photoswipe
+	combination with any slider out there(slick, flickity, owl etc.) and in general slider & lightbox - so i hope this
+	example be usefull for you.</p>
+
+<!-- Slider main container -->
+<div class="swiper-container">
+	<!-- Additional required wrapper -->
+	<ul class="swiper-wrapper my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+		<!-- Slides -->
+		<li class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			<a title="click to zoom-in" href="http://placehold.it/1200x600/EC407A/ffffff?text=Zoom-image-1"
+			   itemprop="contentUrl" data-size="1200x600">
+				<img src="http://placehold.it/600x300/EC407A/ffffff?text=Thumbnail-image-1" itemprop="thumbnail"
+					 alt="Image description"/>
+			</a></li>
+		<li class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			<a title="click to zoom-in" href="http://placehold.it/1200x600/AB47BC/ffffff?text=Zoom-image-2"
+			   itemprop="contentUrl" data-size="1200x600">
+				<img src="http://placehold.it/600x300/AB47BC/ffffff?text=Thumbnail-image-2" itemprop="thumbnail"
+					 alt="Image description"/>
+			</a>
+		</li>
+		<li class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			<a title="click to zoom-in" href="http://placehold.it/1200x600/EF5350/ffffff?text=Zoom-image-3"
+			   itemprop="contentUrl" data-size="1200x600">
+				<img src="http://placehold.it/600x300/EF5350/ffffff?text=Thumbnail-image-3" itemprop="thumbnail"
+					 alt="Image description"/>
+			</a>
+		</li>
+		<li class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			<a title="click to zoom-in" href="http://placehold.it/1200x600/1976D2/ffffff?text=Zoom-image-4"
+			   itemprop="contentUrl" data-size="1200x600">
+				<img src="http://placehold.it/600x300/1976D2/ffffff?text=Thumbnail-image-4" itemprop="thumbnail"
+					 alt="Image description"/>
+			</a>
+		</li>
+		<li class="swiper-slide" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			<a title="click to zoom-in" href="https://picsum.photos/1200/603" itemprop="contentUrl"
+			   data-size="1200x600">
+				<img src="https://picsum.photos/1200/603" itemprop="thumbnail" alt="Image description"/>
+			</a>
+		</li>
+	</ul>
+
+	<!-- Add Pagination -->
+	<div class="swiper-pagination"></div>
+
+	<!-- If we need navigation buttons -->
+	<div title="Prev" class="swiper-button-prev"></div>
+	<div title="Next" class="swiper-button-next"></div>
+</div>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+	<!-- Background of PhotoSwipe.
+		It's a separate element, as animating opacity is faster than rgba(). -->
+	<div class="pswp__bg"></div>
+
+	<!-- Slides wrapper with overflow:hidden. -->
+	<div class="pswp__scroll-wrap">
+
+		<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+		<!-- don't modify these 3 pswp__item elements, data is added later on. -->
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+
+		<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+		<div class="pswp__ui pswp__ui--hidden">
+
+			<div class="pswp__top-bar">
+
+				<!--  Controls are self-explanatory. Order can be changed. -->
+
+				<div class="pswp__counter"></div>
+
+				<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+				<button class="pswp__button pswp__button--share" title="Share"></button>
+
+				<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+				<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+				<!-- element will get class pswp__preloader--active when preloader is running -->
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+
+			<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+			</button>
+
+			<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+			</button>
+
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- ////////////////////////
+DOCS
+////////////////////////////
+-->
+<section id="docs">
+	<br>
+	<br>
+	<br>
+	<hr>
+	<h2>Noted / Important</h2>
+
+	<ol>
+		<li>
+			<h3>Loop & Counter</h3>
+			<p>
+				<strong> Wont work well </strong> with swiper: <code>loop = true;</code> & photoswipe: <code>counterEl:
+				true,</code>(What is counter? example: 1/5...2/5) - "loop" duplicate images - the photoswipe counter
+				will be wrong. *** If you dont want a
+				loop - you can set photoswipe counter <code>counterEl: true,</code>
+			</p>
+		</li>
+		<li>
+			<h3>Markup</h3>
+			<p>
+				<a href="">Schema.org</a> markup + semantic HTML: use unordered (bulleted) list (If you want a div
+				change JS - <strong>"(find) control+f-->"</strong> tagname value) . Copy-paste - this code to check: <a
+					target="_blank" href="https://search.google.com/structured-data/testing-tool">Structured Data
+				Testing Tool - Google</a>
+			</p>
+		</li>
+		<li>
+			<h3>Match index</h3>
+			<p>
+				<strong>
+					Extra CODE "match index"
+				</strong> - EXAMPLE: When you click(zoom) image1 -- goes to image 2 - close image2 (X) - also the swiper
+				update is position (BETTER User Experience) (find(ctr +f)--> <code>mySwiper.slideTo(getCurrentIndex,
+				false);</code>) - This idea miss
+				in most slider & lightbox examples/plugins mixed.
+			</p>
+		</li>
+		<li>
+			<h3>Photoswipe options</h3>
+			<p>
+				JS - line (find) -ctr +f --> the term:<code>// define options (if needed)</code>. You find endless
+				options for <strong>photoswipe</strong> - This is the place to add/modify options. Full Options list her
+				<a href="http://photoswipe.com/documentation/options.html" target="_blank">PhotoSwipe
+					Options</a>
+			</p>
+		</li>
+
+
+		<li>
+			<h3>SWIPER options</h3>
+			<h4>slideperview</h4>
+			<p>
+				<code>slideperview</code> - option1: Set number (1,2,3 and so on) <a
+					href="http://idangero.us/swiper/demos/110-slides-per-view.html" target="_blank"> - example </a>
+				||||| option2(<b>"Carousel Mode"</b> this example): Set to "<code>auto</code>"
+				than add CSS <a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank">width
+				Property</a></code> <code>.swiper-slide</code> (in thie case eash slide is 88% width) - <a
+					href="http://idangero.us/swiper/demos/120-slides-per-view-auto.html"
+					target="_blank">example</a>.
+			</p>
+			<h4>spaceBetween & centeredSlides</h4>
+			<p>
+				Space Between slide by js option <code>spaceBetween</code> - and also usefull to change <code>centeredSlides</code>(true/flase).
+				<br>
+				<a href="http://idangero.us/swiper/api/" target="_blank">Swiper API</a>
+			</p>
+		</li>
+
+		<li>
+			<h3>
+				A non-jQuery dependent
+			</h3>
+		</li>
+	</ol>
+	<hr>
+	<h3>Related Example</h3>
+	<p>
+		<a title="FancyBox3 & Flickity" href="https://codepen.io/ezra_siton/pen/OQmjoq" target="_blank">#FancyBox3 -
+			lightbox & Flickity Slider</a>
+	</p>
+</section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
+
+
+<script src="js/index.js"></script>
+
+
+</body>
+
+</html>
