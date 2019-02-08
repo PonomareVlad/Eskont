@@ -51,16 +51,17 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: rgba(225, 225, 225, 0.7);
+    background: rgba(225, 225, 225, 0.51);
     color: transparent;
     font-size: 0;
     text-decoration: none;
     z-index: 1;
-    transition: background-color .5s;
+    transition: all .5s;
 }
 
 .modal > .modal-section .modal-close:hover {
     background: white;
+    box-shadow: 0 0 10px 0px rgba(68, 68, 68, 0.5);
 }
 
 .modal > .modal-section .modal-close:before {
