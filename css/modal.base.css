@@ -172,6 +172,25 @@ ul.swiper-wrapper {
     background: #e1e1e1;
 }
 
+.swiper-button-prev,.swiper-button-next{
+    background: unset;
+}
+
+.swiper-button-prev:before,.swiper-button-next:before{
+    position: absolute;
+    content: '〈';
+    color: white;
+    font-size: 50px;
+    left: -20px;
+    top: 0;
+    text-shadow: 0px 0px 20px black;
+}
+.swiper-button-next:before{
+    content: '〉';
+    left: unset;
+    right: -20px;
+}
+
 @media (orientation: landscape) {
     .modal > .modal-section {
         overflow: auto;
