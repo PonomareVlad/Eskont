@@ -20,3 +20,15 @@
 .modal > .modal-section .modal-close {
     position: absolute;
 }
+
+@media (max-height: 665px) {
+    .modal > .modal-section{
+        min-height: unset;
+        max-height: unset;
+        height: 90%;
+    }
+
+    .modal > .modal-section .modal-slider{
+        min-height: unset;
+    }
+}

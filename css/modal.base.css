@@ -68,12 +68,16 @@
     text-transform: uppercase;
     display: inline-block;
     color: #444;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 25px;
+    line-height: 25px;
     font-weight: 100;
-    margin-bottom: -5px;
+    margin-bottom: -7px;
+    margin-right: -2px;
     pointer-events: none;
     user-select: none;
+    -webkit-user-select: none;
+    text-align: center;
+    width: 100%;
 }
 
 .modal > .modal-backdrop-close {
