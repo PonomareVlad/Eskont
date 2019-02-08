@@ -1,33 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-
-	fetchAllModalNodes('[data-modal-open]', openModal);
-
-	fetchAllModalNodes('[data-modal-close]', closeModal);
-
-	function fetchAllModalNodes(selector, handler) {
-		var modalCloseNodes = document.querySelectorAll(selector);
-		for (var i = 0, len = modalCloseNodes.length; i < len; i++) {
-			modalCloseNodes[i].addEventListener('click', handler);
-		}
-	}
-
-	function openModal() {
-		document.body.classList.toggle('disableScroll', true);
-		initSwiper(document.querySelector(this.hash + ' .swiper-container'));
-	}
-
-	function closeModal() {
-		document.body.classList.toggle('disableScroll', false);
-	}
-
-});
-
 window.swiperSliders = [];
 
 function initSwiper(slider, photoSwipeInit = true) {
 	return swiperSliders.push(new Swiper(slider, {
 		loop: true,
 		centeredSlides: true,
+		observer: true,
+		observeParents: true,
 		navigation: {
 			nextEl: slider.querySelector('.swiper-button-next'),
 			prevEl: slider.querySelector('.swiper-button-prev')
@@ -264,11 +242,45 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 	}
 };
 
-var sliderNodes = document.querySelectorAll('.modal .swiper-container');
+window.addEventListener("load", function () {
 
-for (var i = 0, len = sliderNodes.length; i < len; i++) {
-	var slider = sliderNodes[i];
-	initSwiper(slider, false);
-}
+	fetchAllModalNodes('[data-modal-open]', openModal);
 
-initPhotoSwipeFromDOM(".my-gallery");
+	// fetchAllModalNodes('[data-modal-close]', closeModal);
+
+	function fetchAllModalNodes(selector, handler) {
+		var modalCloseNodes = document.querySelectorAll(selector);
+		for (var i = 0, len = modalCloseNodes.length; i < len; i++) {
+			modalCloseNodes[i].addEventListener('click', handler);
+		}
+	}
+
+	function openModal() {
+		// document.body.classList.toggle('disableScroll', true);
+
+		// initSwiper(document.querySelector(this.hash + ' .swiper-container'));
+		setTimeout(function () {
+			document.querySelector(this.hash + ' .swiper-container').swiper.update();
+		}.bind(this), 1);
+	}
+
+	/*function closeModal() {
+		// document.body.classList.toggle('disableScroll', false);
+	}*/
+
+	var sliderNodes = document.querySelectorAll('.modal .swiper-container');
+
+	for (var i = 0, len = sliderNodes.length; i < len; i++) {
+		var slider = sliderNodes[i];
+		initSwiper(slider, false);
+	}
+
+	initPhotoSwipeFromDOM(".my-gallery");
+
+});
+
+window.addEventListener('popstate', function (event) {
+	document.body.classList.toggle('disableScroll', !!location.hash);
+});
+
+document.body.classList.toggle('disableScroll', !!location.hash);
