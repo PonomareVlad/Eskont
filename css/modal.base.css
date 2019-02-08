@@ -177,7 +177,8 @@ ul.swiper-wrapper {
     background: unset;
 }
 
-.swiper-button-prev:before,.swiper-button-next:before{
+.swiper-button-prev:before,
+.swiper-button-next:before{
     position: absolute;
     content: '〈';
     color: white;
@@ -185,7 +186,11 @@ ul.swiper-wrapper {
     left: -20px;
     top: 0;
     text-shadow: 0px 0px 20px black;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
 }
+
 .swiper-button-next:before{
     content: '〉';
     left: unset;
