@@ -1,0 +1,42 @@
+.index-content-section {
+    width: calc(100vw - 40px);
+    height: calc(100vh - 100px);
+    padding: 20px;
+    padding-top: 80px;
+    z-index: 1;
+    color: white;
+    box-sizing: content-box
+}
+
+.index-content-section h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.index-content-section h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.index-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1
+}
+
+@media (min-width: 568px) {
+    .index-content-section {
+        width: calc(100vw - 80px);
+        height: calc(100vh - 140px);
+        padding: 40px;
+        padding-top: 100px;
+    }
+}

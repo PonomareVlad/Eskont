@@ -43,6 +43,9 @@
     <link href="css/owl.carousel.min.css" media="screen" rel="stylesheet" type="text/css">
     <script src="js/jquery.min.js"></script>
 
+    <link href="css/index.base.css" rel="stylesheet">
+    <link href="css/index.desktop.css" media="(min-width: 1001px)" rel="stylesheet">
+
 </head>
 
 <body>
@@ -91,16 +94,15 @@
 </header>
 
 <section class="slider">
-    <div style="width: calc(100vw - 200px);height: calc(100vh - 260px);padding: 100px;padding-top: 160px;z-index: 1;color: white;box-sizing: content-box">
-        <h1 style="font-size: 50px;font-weight: 600;">
+    <div class="index-content-section">
+        <h1 style="">
             Добро пожаловать в Eskont!
         </h1>
-        <h2 style="font-size: 30px;font-weight: 400;margin-top: 50px;">
+        <h2 style="">
             Архитектурное бюро
         </h2>
     </div>
-    <video autoplay loop muted poster="video/index.png" src="video/index.mp4"
-           style="width: 100vw;height: 100vh;object-fit: cover;background-color: black;position: absolute;left: 0;top: 0;right: 0;bottom: 0;z-index: -1"></video>
+    <video autoplay class="index-video" loop muted poster="video/index.png" src="video/index.mp4"></video>
 </section>
 
 
