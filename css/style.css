@@ -4,7 +4,7 @@
 @font-face {
     font-family: 'FuturaBookC';
     src: url('../fonts/FuturaBook/FuturaBookC.eot');
-    src: url('../fonts/FuturaBook/FuturaBookC-.eot#iefix') format('embedded-opentype'),
+    src: url('../fonts/FuturaBook/FuturaBookC.eot?#iefix') format('embedded-opentype'),
         url('../fonts/FuturaBook/FuturaBookC.woff2') format('woff2'),
         url('../fonts/FuturaBook/FuturaBookC.woff') format('woff'),
         url('../fonts/FuturaBook/FuturaBookC.ttf') format('truetype');
@@ -15,7 +15,7 @@
 @font-face {
 	font-family: "FuturaBold";
 	src: url("../fonts/FuturaBold/FuturaBold.eot");
-	src: url("../fonts/FuturaBold/FuturaBold-.eot#iefix")format("embedded-opentype"),
+    src: url("../fonts/FuturaBold/FuturaBold.eot?#iefix") format("embedded-opentype"),
 		url("../fonts/FuturaBold/FuturaBold.woff") format("woff"),
 		url("../fonts/FuturaBold/FuturaBold.ttf") format("truetype");
 	font-style: normal;
@@ -55,7 +55,7 @@
     margin-left: -100px;
     top: 38%;
     margin-top: -20px;
-    background: url("http://www.eskont.com/img/Blocks-1s-200px.svg") center center no-repeat;
+    background: url(../img/Blocks-1s-200px.svg) center center no-repeat;
     background-size: cover;
 }
 
@@ -73,7 +73,7 @@ body{
 }
 
 .slider .item{
-	background-image: url("http://www.eskont.com/img/backgraund.jpg");
+    background-image: url(../img/backgraund.jpg);
 	background-size: cover;
 	background-position: 50% 0;
 	width: 100%;
@@ -88,7 +88,7 @@ body{
 }
 
 .owl-nav .owl-prev {
-    background: url("../img/left-arrow.svg") !important;
+    background: url(../img/left-arrow.svg) !important;
     background-size: contain !important;
     width: 19px;
     height: 50px;
@@ -98,7 +98,7 @@ body{
 }
 
 .owl-nav .owl-next {
-    background: url("../img/right-arrow.svg") !important;
+    background: url(../img/right-arrow.svg) !important;
     background-size: contain !important;
     width: 19px;
     height: 50px;
@@ -108,7 +108,7 @@ body{
 }
 
 header{
-	background: rgba(65, 65, 65, 0.9);
+    background: rgba(255, 255, 255, 0.8);
 	padding: 10px 0;
 	position: fixed;
 	width: 100%;
@@ -193,7 +193,7 @@ nav ul li .sub li{
 	float: none;
 	display: list-item;
 	text-align: left;
-	background: rgba(65, 65, 65, 0.6);
+    background: rgba(0, 0, 0, 1);
 }
 
 nav ul li .sub li a{
@@ -227,7 +227,7 @@ nav ul li{
 
 nav ul li a{
 	font-size: 18;
-	color:#ffffff;
+    color: #000;
 	text-decoration:none;
 	display: block;
 	padding: 9px 20px;
@@ -236,20 +236,20 @@ nav ul li a{
 }
 
 nav ul li a:hover, nav ul li a.active{
-	border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #b38843;
 	padding: 9px 20px;
 }
 
 .contact{
 	float:right;
-	border-left: 1px solid #ffffff;
+    border-left: 1px solid #b38843;
 	margin-top: 8px;
 }
 
 .contact .phone{
 	font-size: 18px;
 	padding: 3px 16px;
-	color:#ffffff;
+    color: #b38843;
 	letter-spacing: 1px;
 }
 
@@ -320,7 +320,7 @@ section.slider{
 
 .top-mouse{
 	position: absolute;
-    background-image: url("../img/mouse.svg");
+    background-image: url(../img/mouse.svg);
     background-size: cover;
     width: 40px;
     height: 70px;
@@ -418,7 +418,7 @@ section.slider .item p{
 
 .netwoeck i{
 	float: right;
-	background-image: url("../img/network.svg");
+    background-image: url(../img/network.svg);
 	background-size: cover;
 	width: 35px;
 	height: 35px;
@@ -458,7 +458,7 @@ section.slider .item p{
 }
 
 .menu span {
-    background: url("../img/menu.svg");
+    background: url(../img/menu.svg);
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -778,7 +778,7 @@ section.bg-grey{
 
 .project .other-project:after{
 	content:'';
-	background:url("../img/down-arrow.svg");
+    background: url(../img/down-arrow.svg);
 	display: inline-block;
 	width: 20px;
 	height: 9px;
@@ -787,7 +787,7 @@ section.bg-grey{
 
 .project .other-project:hover:after {
     content: '';
-    background: url("../img/down-arrow-b.svg");
+    background: url(../img/down-arrow-b.svg);
     display: inline-block;
     width: 20px;
     height: 9px;
@@ -910,7 +910,7 @@ section.bg-grey{
 /* Обратная связь */
 
 .feedback-cv{
-	background:url("../img/feedback-bg.jpg");
+    background: url(../img/feedback-bg.jpg);
 	background-size:cover;
 	padding: 40px 0;
 }
@@ -1053,14 +1053,14 @@ section.bg-grey{
 
 .customers .owl-nav .owl-prev,
 .blogs-slid .owl-nav .owl-prev{
-	background-image: url("../img/left-arrow-b.svg") !important;
+    background-image: url(../img/left-arrow-b.svg) !important;
 	background-size: contain !important;
 	left: -40px;
 }
 
 .customers .owl-nav .owl-next,
 .blogs-slid .owl-nav .owl-next{
-    background-image: url("../img/right-arrow-b.svg") !important;
+    background-image: url(../img/right-arrow-b.svg) !important;
     background-size: contain !important;
     right: 40px;
 }
@@ -1072,7 +1072,7 @@ section.bg-grey{
 .bg-p{
 	height:auto;
 
-	background-image: url("../img/bgp.jpg");
+    background-image: url(../img/bgp.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -1245,7 +1245,7 @@ section.bg-p p{
 
 .blog .other-project:after {
     content: '';
-    background: url("../img/down-arrow-b.svg");
+    background: url(../img/down-arrow-b.svg);
     display: inline-block;
     width: 20px;
     height: 9px;
@@ -1269,7 +1269,7 @@ section.bg-p p{
 
 .about .row{
 	margin-top:30px;
-	
+
 }
 .about .row p{
 	font-size:18px;
@@ -1447,7 +1447,7 @@ breadcrumbs span{
 
 .characters::after {
       content: '';
-      background: url("../img/down-arrow.svg");
+    background: url(../img/down-arrow.svg);
       background-size: contain;
       display: inline-block;
       width: 13px;
@@ -1489,7 +1489,7 @@ breadcrumbs span{
 	font-size: 40px;
 	margin-right: 10px;
 	top: 0px;
-	background: url("../img/down-arrow-b.svg");
+    background: url(../img/down-arrow-b.svg);
 	display: inline-block;
 	width: 20px;
 	height: 9px;
@@ -1680,7 +1680,7 @@ breadcrumbs span{
 
 .table-price tr{
 	margin-bottom:20px;
-	
+
 }
 
 .table-price tr td:nth-child(1),
@@ -1689,7 +1689,7 @@ breadcrumbs span{
 	text-align:left;
 	border:1px solid;
 	padding: 10px 50px 10px 50px
-	
+
 }
 
 .table-price tr td:nth-child(2),
@@ -1712,19 +1712,19 @@ breadcrumbs span{
 	.table-price{
 		font-size:22px;
 	}
-	
+
 	.subscribe .scribe-text,
 	.subscribe .bottom .btm-ss{
 		font-size:35px;
 		padding: 20px 90px;
 		line-height: 35px;
 	}
-	
+
 	.no-one-block {
 		margin-top: 95px !important;
 		padding-top: 0 !important;
 	}
-	
+
 	.logo {
 		height: 40px;
 	}
@@ -1733,26 +1733,26 @@ breadcrumbs span{
 		height: 40px;
 		width: 163px;
 	}
-	
+
 	nav ul li a {
 		font-size: 16px;
 		padding: 6px 16px;
 	}
-	
+
 	nav ul li a:hover, nav ul li a.active{
 		padding: 6px 16px;
 	}
-	
+
 	.contact .phone {
 		font-size: 16px;
 		padding: 3px 12px;
 	}
-	
+
 	.feedback {
 		font-size: 12px;
 		padding: 4px 0 3px 0;
 	}
-	
+
 	section.slider .item h2{
 		font-size:42px;
 	}
@@ -1768,28 +1768,28 @@ breadcrumbs span{
 	.contact{
 		margin-top: 5px;
 	}
-	
+
 	/* arckitecture */
-	
+
 	section.bg-white h2, section.bg-grey h2, section.bg-p h2{
 		font-size: 26px;
 	}
-	
+
 	.what-the-project h3 {
 		font-size: 16px;
 		width: 75%;
 		margin: 0 auto 10px auto;
 	}
-	
+
 	.what-the-project p {
 		font-size: 16px;
 	}
-	
+
 	.project .other-project {
 		font-size: 18px;
 		padding: 6px 30px;
 	}
-	
+
 	.project .item {
 		height: 219px;
 		background-size: cover;
@@ -1799,89 +1799,89 @@ breadcrumbs span{
 		height: 320px;
 		background-size: cover;
 	}
-	
+
 	.project .item div a.project-a {
 		font-size: 18px;
 		padding: 8px 20px;
 	}
-	
+
 	.project .item div h3 {
 		font-size: 22px;
 
 	}
-	
+
 	.serves img{
 		width:80px;
 	}
-	
+
 	.serves p {
 		font-size: 19px;
 	}
-	
+
 	.difference .row {
 		padding: 0px 100px;
 	}
-	
+
 	.difference .difference-div h4 {
 		font-size: 20px;
 	}
-	
+
 	.difference .difference-div p {
 		font-size: 18px;
 	}
-	
+
 	.difference img {
 		width: 90px;
 	}
-	
+
 	.bg-eskont .xl-sn-3 p {
 		font-size: 20px;
 		width: 50%;
 	}
-	
+
 	.bg-eskont .xl-sn-3 img {
 		width: 70px;
 	}
-	
+
 	.feedback-cv .wrapp-feedback {
 		padding: 34px 0;
 		width: 1200px;
 	}
-	
+
 	.feedback-cv .xl-sn-2 form div:nth-child(1) input[type="text"] {
 		width: 289px;
 	}
-	
+
 	.feedback-cv .xl-sn-2 form div:nth-child(2) input[type="text"] {
 		width: 320px;
 
 	}
-	
+
 	.feedback-cv .xl-sn-2:nth-child(1) {
 		padding: 2% 5.5%;
 		width: 39%;
 	}
-	
+
 	.feedback-cv .xl-sn-2 p {
 		font-size: 26px;
 	}
-	
+
 	.feedback-cv .xl-sn-2:nth-child(2) {
 		padding: 0 2.9%;
 	}
-	
+
 	.feedback-cv .xl-sn-2:nth-child(2) form span {
 		font-size: 20px;
 	}
-	
+
 	.feedback-cv .xl-sn-2:nth-child(2) form div {
 		margin-bottom: 15px;
 	}
-	
+
 	.feedback-cv .xl-sn-2:nth-child(2) form input[type="submit"] {
 		margin-top: 24px;
 	}
-	
+
 	.customers .owl-nav {
 		top: 7%
 	}
@@ -1910,15 +1910,15 @@ breadcrumbs span{
     .tabs .tab a:hover {
     	border-bottom: 2px solid #ffffff;
     }
-	
+
 	.map {
 		height: 400px;
 	}
-	
+
 	.contact-block .contact-item{
 		margin-left: 10%;
 	}
-	
+
 	section.blog-item p{
 		font-size:24px;
 	}
@@ -1930,11 +1930,11 @@ breadcrumbs span{
 	.acc-trigger a {
 		font-size: 22px;
 	}
-	
+
 	section.blog-item h1 {
 		font-size: 30px;
 	}
-	
+
 	section.blog-item h2{
 	font-size: 26px !important;
 	}
@@ -1949,11 +1949,11 @@ breadcrumbs span{
 }
 
 @media screen and (max-width: 1320px){
-	
+
 	.table-price{
 		font-size:20px;
 	}
-	
+
     .xl-sn-1 form span, .xl-sn-1 form input[type="submit"]{
     	font-size:20px
     }
@@ -1971,20 +1971,20 @@ breadcrumbs span{
 	.subscribe .bottom{
 		padding: 58px 40px;
 	}
-	
+
 	.logo {
 		height: 40px;
 	}
-	
+
 	.logo img {
 		height: 40px;
 		width: 163px;
 	}
-	
+
 	.contact {
 	    margin-top: 7px;
 	}
-	
+
 	nav ul li a {
 		font-size: 14px;
 		padding: 6px 14px;
@@ -1996,19 +1996,19 @@ breadcrumbs span{
 	header {
 		padding: 10px 0;
 	}
-	
+
 	nav ul li a:hover, nav ul li a.active{
 		padding: 6px 14px;
 	}
-	
+
 	section.slider .item h2{
 		font-size:32px;
 	}
-	
+
 	section.slider .item a{
 		font-size:24px;
 	}
-	
+
 	.difference .row {
 		padding: 0px 70px;
 	}
@@ -2024,36 +2024,36 @@ breadcrumbs span{
     .tabs .tab a:hover {
     	border-bottom: 2px solid #ffffff;
     }
-	
+
 	.blog .item .leftblog{
 		width:30%;
 	}
-	
+
 	.blog .item .rightblog{
 		width:67%;
 	}
-	
+
 	.blog .item .rightblog h3{
 		font-size:20px;
 	}
-	
+
 	.blog .item .rightblog p, .blog .item .rightblog a{
 		font-size: 18px;
 	}
-	
+
 	.map {
 		height: 400px;
 	}
-	
+
 	.contact-block .contact-item{
 		margin-left: 5%;
 	}
-	
+
 	.contact-block .contact-item h3,
 	.contact-block .contact-item p{
 		font-size:18px;
 	}
-	
+
 	section.blog-item p{
 		font-size:20px;
 	}
@@ -2065,19 +2065,19 @@ breadcrumbs span{
 	.acc-trigger a {
 		font-size: 20px;
 	}
-	
+
 	section.blog-item h1 {
 		font-size: 28px;
 	}
-	
+
 	section.blog-item h2{
 		font-size: 24px !important;
 	}
-	
+
 	.blogs-slid .item a{
 		font-size:18px;
 	}
-	
+
 	.breadcrumbs a,
 	breadcrumbs span{
 		font-size:16px;
@@ -2107,16 +2107,16 @@ breadcrumbs span{
 	.xl-sn-1 form span, .xl-sn-1 form input[type="submit"]{
     	font-size:18px
     }
-	
+
 	.difference .row {
 
 		padding: 0px 0px !important;
 	}
-	
+
 	.difference .row {
 		padding: 0px 20px;
 	}
-	
+
 	.feedback-cv .wrapp-feedback{
 		width:96%;
 	}
@@ -2128,49 +2128,49 @@ breadcrumbs span{
 	nav ul li a:hover, nav ul li a.active{
 		padding: 9px 11px;
 	}
-	
+
 	.logo {
 		height: 40px;
 	}
-	
+
 	.logo img {
 		height: 40px;
 		width: 163px;
 	}
-	
+
 	.feedback {
 		font-size: 9px;
 		padding: 5px 0 2px 0;
 	}
-	
+
 	.contact .phone {
 		font-size: 14px;
 		padding: 2px 9px;
 		letter-spacing: 1px;
 	}
-	
+
 	section.slider .item a{
 		font-size:18px;
 	}
-	
+
 	.serves img {
 		float:none;
 		margin:0 auto;
 		display: block;
 	}
-	
+
 	.serves p {
 		text-align: center;
 		float: none;
 		width: 60%;
 		margin: 21px auto 0 auto;
 	}
-	
+
 	.contact-block .contact-item{
 		margin-left: 0;
 		width: 80%;
 	}
-	
+
 	section.blog-item p{
 		font-size:18px;
 	}
@@ -2182,11 +2182,11 @@ breadcrumbs span{
 	.acc-trigger a {
 		font-size: 18px;
 	}
-	
+
 	section.blog-item h1 {
 		font-size: 26px;
 	}
-	
+
 	.table-price{
 		font-size:18px;
 	}
@@ -2211,7 +2211,7 @@ breadcrumbs span{
 	.difference .xl-sn-2{
 		text-align:center;
 	}
-	
+
 	.difference img{
 		float:none;
 		margin:0 auto;
@@ -2241,7 +2241,7 @@ breadcrumbs span{
 	.plock-p{
 		width: 297px;
 		padding: 20px 0px 20px 20px;
-	}		
+	}
 }
 
 @media screen and (max-width: 1000px){
@@ -2261,11 +2261,11 @@ breadcrumbs span{
 		margin-left: 71px;
 		display: inline;
 	}
-	
+
 	.map {
 		height: 380px;
 	}
-	
+
 	.serves p {
 		text-align: left;
 		float: left;
@@ -2273,36 +2273,36 @@ breadcrumbs span{
 		margin-top: 21px;
 		margin-left: 20px;
 	}
-	
+
 	.blog .item .leftblog, .blog .item .rightblog{
 		float:none;
 		width: 100%;
 		margin:0 auto;
 		text-align:center;
 	}
-	
+
 	.blog .item .rightblog h3{
 		margin-top:20px;
 	}
-	
+
 	.blog .item .rightblog h3:after{
 		margin: 12px auto 0 auto;
 		width: 70%;
 	}
-	
+
 	.lx-1-head {
 		width: 50%;
 	}
-	
+
 	.fadeCustomers .owl-nav,
 	.blogs-slid .owl-nav{
 		display:block;
 	}
-	
+
 	.owl-nav{
 		display:none;
 	}
-	
+
 	.owl-theme .owl-dots{
 		text-align: center;
 		-webkit-tap-highlight-color: transparent;
@@ -2311,12 +2311,12 @@ breadcrumbs span{
 		position: relative;
 		z-index: 2;
 	}
-	
+
 	.owl-theme .owl-dots .owl-dot {
 		display: inline-block;
 		zoom: 1;
 	}
-	
+
 	.owl-carousel button.owl-dot {
 		background: 0 0;
 		color: inherit;
@@ -2324,7 +2324,7 @@ breadcrumbs span{
 		padding: 0!important;
 		font: inherit;
 	}
-	
+
 	.owl-carousel .owl-dot{
 		cursor: pointer;
 		-webkit-user-select: none;
@@ -2333,11 +2333,11 @@ breadcrumbs span{
 		-ms-user-select: none;
 		user-select: none;
 	}
-	
+
 	.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
 		background: #ffffff;
 	}
-	
+
 	.owl-theme .owl-dots .owl-dot span {
 		width: 10px;
 		height: 10px;
@@ -2348,11 +2348,11 @@ breadcrumbs span{
 		transition: opacity .2s ease;
 		border-radius: 30px
 	}
-	
+
 	.what-the-project .xl-sn-5{
 		width:100%;
 	}
-	
+
 	.project .xl-sn-3 {
 		width: 100%;
 	}
@@ -2360,11 +2360,11 @@ breadcrumbs span{
 	.p2.project .xl-sn-2{
 		width:100%
 	}
-	
+
 	.project .row{
 		padding: 0 20px;
 	}
-	
+
 	.project .item{
 		padding: 0 0px;
 		height: 465px;
@@ -2373,10 +2373,10 @@ breadcrumbs span{
 	.p2.project .item {
 		height: 360px;
 	}
-	
+
 	.serves .row .xl-sn-3{
 		width:100%;
-		
+
 	}
 	.serves p {
 		width: 64%;
@@ -2391,21 +2391,21 @@ breadcrumbs span{
 		float:none;
 		padding: 20px 0;
 	}
-	
+
 	.contact-block .xl-sn-3{
 		float:none;
 		width:100%;
 		text-align:center;
 	}
-	
+
 	.contact-block .contact-item h3:after{
 		margin: 7px auto 0 auto;
 	}
-	
+
 	.contact-block .contact-item{
 		width:100%;
 	}
-	
+
 	.contact-block .contact-item{
 		margin-bottom:40px;
 	}
@@ -2420,13 +2420,13 @@ breadcrumbs span{
 	.price .xl-sn-2{
 		width:100%;
 	}
-	
+
 	.plock-p {
 		width: 83%;
 		padding: 3% 0px 3% 3%;
 		margin: 7%;
 	}
-	
+
 
 	.price-block{
 		width:100%;
@@ -2436,31 +2436,31 @@ breadcrumbs span{
 		min-width: 100%;
 		margin: 20px 0;
 	}
-	
+
 	nav, .contact{
 		display: none;
 	}
-	
+
 	.menu{
 		display: block;
 	}
-	
+
 	.logo {
 		height: 40px;
 	}
-	
+
 	.logo img {
 		height: 40px;
 	}
-	
+
 	section.slider .item h2 {
 		font-size: 32px;
 	}
-	
+
 	section.slider .item .wrapp{
 		 padding: 0px 40px;
 	}
-	
+
 	.difference .xl-sn-2 {
 		height: 250px;
 	}
@@ -2468,7 +2468,7 @@ breadcrumbs span{
 	.footer{
 		text-align:center;
 	}
-	
+
 	.footer .netwoeck{
 		float:none;
 		margin: 20px auto 0;
@@ -2479,11 +2479,11 @@ breadcrumbs span{
 		float:none;
 		margin:20px auto 20px auto;
 	}
-	
+
 	.tabs{
 		display:none;
 	}
-	
+
 	.mebel-select{
 		display: block;
 		margin-bottom: 40px;
@@ -2492,10 +2492,10 @@ breadcrumbs span{
 		margin: 0 auto 40px auto;
 	}
 
-	
+
 	.mebel-select:after {
 		content: '';
-		background: url("../img/down-arrow-b.svg");
+        background: url(../img/down-arrow-b.svg);
 		display: inline-block;
 		width: 20px;
 		height: 9px;
@@ -2504,11 +2504,11 @@ breadcrumbs span{
 		right: 4%;
 		top: 40%;
 	}
-	
+
 	section.blog-item .aftor{
 		width:60%;
 	}
-	
+
 	.subscribe .scribe-text,
 	.subscribe .bottom{
 		float:none;
@@ -2538,11 +2538,11 @@ breadcrumbs span{
 	.plock-p a {
 		line-height: 50px;
     }
-    	
+
 	.mebel-select{
 		width: 100%;
 	}
-	
+
 	section.slider .item .wrapp:before {
 		margin-right: -1.5em;
 	}
@@ -2550,27 +2550,27 @@ breadcrumbs span{
 	.serves img {
 	    margin-left: 0px;
 	   }
-	
+
 	.footer .copy{
 		font-size:12px
 	}
-	
+
 	.project .item {
 		height: 270px;
 	}
-	
+
 	.wrapp {
 		padding: 0px 20px;
 	}
-	
+
 	.item {
 		padding: 0 0px;
 	}
-	
+
 	.contact-mob{
 		display: block;
 	}
-	
+
 	.owl-nav button{
 		width: 14px !important;
 		height: 37px !important;
@@ -2583,21 +2583,21 @@ breadcrumbs span{
 	.customers .owl-nav .owl-prev{
 		left: 0;
 	}
-	
+
 	.contact{
 		display:none;
 	}
-	
+
 	section.slider .item h2{
 		width:100%;
 		font-size: 44px;
 	}
-	
+
 	section.slider .item p{
 		width:100%;
 		font-size: 18px;
 	}
-	
+
 	.difference .xl-sn-2{
 		width: 340px;
 
@@ -2607,18 +2607,18 @@ breadcrumbs span{
 		margin: 0 auto;
 		margin-bottom: 60px;
 	}
-	
+
 	.difference img {
 		float: left;
 		width: 80px;
 	}
-	
+
 	.difference .difference-div {
 		float: left;
 		width: 235px;
 		margin-left: 25px;
 	}
-	
+
 	.feedback-cv .xl-sn-2{
 		width:100% !important;
 		border-right:0 !important;
@@ -2629,41 +2629,41 @@ breadcrumbs span{
 		border-bottom: 1px solid #ffffff;
 		padding-bottom: 38px !important;
 	}
-	
+
 	section.bg-white h2, section.bg-grey h2 {
 		font-size: 22px;
 	}
-	
+
 	.bg-eskont .row {
 		margin: 0px 0;
 	}
-	
+
 	.project .row {
 		margin-top: 40px;
 		padding: 0;
 	}
-	
+
 	.project .other-project{
 		margin-top:40px;
 	}
-	
+
 	.difference .difference-div h4 {
 		font-size: 18px;
 	}
-	
+
 	.difference .difference-div p {
 		font-size: 16px;
 	}
-	
+
 	.serves .row {
 		margin: 25px 0;
 	}
-	
+
 	.feedback-cv .xl-sn-2:nth-child(2) form{
 		width:100%;
 		padding-top: 40px;
 	}
-	
+
 	.bg-eskont .xl-sn-3{
 		width:100%;
 	}
@@ -2675,7 +2675,7 @@ breadcrumbs span{
 	.facty .row{
 		margin-top: 60px;
 	}
-	
+
 	.facty .xl-sn-3 p {
 		font-size: 18px;
 		width: 80%;
@@ -2706,11 +2706,11 @@ breadcrumbs span{
     .xl-sn-1 form div:nth-child(2) input[type="text"] {
     	width: 254px !important;
     }
-	
+
 	.serves, section.bg-white.bg-eskont{
 		background:none;
 	}
-	
+
 	.feedback-cv .xl-sn-2 p {
 		font-size: 22px;
 	}
@@ -2722,7 +2722,7 @@ breadcrumbs span{
 	.blog .row{
 		padding:0 10px;
 	}
-	
+
 	.p2.project .item {
 		height: 210px;
 	}
@@ -2736,7 +2736,7 @@ breadcrumbs span{
 	.table-price tr th:nth-child(2){
 		width: 40% !important;
 		padding:10px 15px !important;
-	}	
+	}
 }
 
 
@@ -2757,7 +2757,7 @@ breadcrumbs span{
 	.plock-p a {
 		line-height: 43px;
     }
-	
+
 	.subscribe .scribe-text {
 		font-size: 20px;
 		line-height: 30px;
@@ -2768,7 +2768,7 @@ breadcrumbs span{
 		padding: 12px 50px;
     }
 
- 
+
 }
 
 @media screen and (max-width: 380px){
@@ -2800,7 +2800,7 @@ breadcrumbs span{
 	.mebel-select{
 		width: 100%;
 	}
-	
+
 	section.slider .item h2 {
 		width: 100%;
 		font-size: 36px;
@@ -2819,7 +2819,7 @@ breadcrumbs span{
     }
 
 
-	
+
 	.serves p {
 		width: 64%;
 	}
@@ -2831,12 +2831,12 @@ breadcrumbs span{
 		float: none;
 		margin: 0 auto 60px auto;
 	}
-	
+
 	.difference img {
 		float: left;
 		width: 70px;
 	}
-	
+
 	.difference .difference-div {
 		float: left;
 		width: 214px;
@@ -2854,7 +2854,7 @@ breadcrumbs span{
     	margin: 0 auto 40px auto;
     }
 
-    
+
 
     .xl-sn-1 form div:nth-child(1) input[type="text"]{
     	width: 190px !important;
@@ -2867,11 +2867,11 @@ breadcrumbs span{
     .feedback-cv .xl-sn-2:nth-child(2) form {
         width: 100%;
     }
-	
+
 	.serves .row{
 		padding: 0;
 	}
-	
+
 	.fadeCustomers{
 		margin-top:40px
 	}
@@ -2895,11 +2895,11 @@ breadcrumbs span{
 	section.bg-p p{
 		width:100%
 	}
-	
+
 	section.bg-p .row .xl-sn-3 div{
 		margin-top:20px;
 	}
-	
+
 	section.blog-item .aftor{
 		width:90%;
 	}
@@ -2910,18 +2910,18 @@ breadcrumbs span{
 	.difference .xl-sn-2 {
 		width: 280px;
 	}
-	
+
 	.difference img {
 		float: left;
 		width: 50px;
 	}
-	
+
 	.difference .difference-div {
 		float: left;
 		width: 205px;
 		margin-left: 25px;
 	}
-	
+
 	.fadeCustomers .owl-item img{
 		width:100% !important;
 	}
@@ -2935,11 +2935,11 @@ breadcrumbs span{
 	section.slider .item h2 {
 		font-size: 36px;
 	}
-	
+
 	section.slider .item h2{
 		font-size: 40px;
 	}
-	
+
 	section.slider .item p{
 		font-size: 21px;
 		margin-top: 13px;
@@ -2959,16 +2959,16 @@ breadcrumbs span{
 		height: 37px;
 		background-size: contain;
 	}
-	
+
 	section.slider .item h2{
 		font-size: 24px;
 	}
-	
+
 	.menu span {
 		width: 25px;
 		height: 25px;
 	}
-	
+
 	.contact-mob {
 		width: 50%;
 		margin: 1% auto 0 auto;
@@ -2979,16 +2979,16 @@ breadcrumbs span{
 	.contact-mob .phone {
 		font-size: 18px;
 	}
-	
+
 	section.slider .item p{
 		font-size: 17px;
 		margin-top: 5px;
 	}
-	
+
 	.logo{
 		width:25%;
 	}
-	
+
 	.logo img{
 		width:100%;
 	}
@@ -3005,12 +3005,12 @@ breadcrumbs span{
 	section.slider .item h2{
 		font-size: 34px;
 	}
-	
+
 	section.slider .item p{
 		width:100%;
 		font-size: 16px;
 	}
-	
+
 	.contact-mob {
 		margin: 6% auto 0 auto;
 		margin-left: -40%;

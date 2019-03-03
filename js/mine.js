@@ -152,17 +152,10 @@ $('.full-foto-window').click(function (e) {
 });
 
 $('.other-project').click(function (e) {
-    // $('.project .xl-sn-3, .project .xl-sn-2').fadeIn();
-    // $('.blog-items .item').fadeIn();
+    $('.project .xl-sn-3, .project .xl-sn-2').fadeIn();
+    $('.blog-items .item').fadeIn();
 
-    let projectNodes = document.querySelectorAll('.project .xl-sn-3.overflow, .project .xl-sn-2.overflow');
-    if (projectNodes) for (let i = 0; i < 3; i++) if (projectNodes[i]) projectNodes[i].classList.toggle('overflow', false) && $(projectNodes[i]).fadeIn();
-
-    let blogNodes = document.querySelectorAll('.blog-items .item.overflow');
-    if (blogNodes) for (let i = 0; i < 3; i++) if (blogNodes[i]) blogNodes[i].classList.toggle('overflow', false) && $(blogNodes[i]).fadeIn();
-
-    if (!document.querySelector('.project .xl-sn-3.overflow, .project .xl-sn-2.overflow, .blog-items .item.overflow'))
-        $('.other-project').css('display', 'none');
+    $('.other-project').css('display', 'none');
     e.preventDefault();
 });
 
@@ -194,6 +187,7 @@ $('select[name="tab"]').on('change', function () {
     $("." + newSelection2).slideDown();
     e.preventDefault();
 });
+
 
 
 /*----------------------------------------------------- */
