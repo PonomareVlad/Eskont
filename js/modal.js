@@ -246,7 +246,11 @@ window.addEventListener("load", function () {
 
     fetchAllModalNodes('[data-modal-open]', openModal);
 
-    // fetchAllModalNodes('[data-modal-close]', closeModal);
+    fetchAllModalNodes('[data-modal-close]', function (event) {
+        setTimeout(function () {
+            document.querySelector('.project').scrollIntoView();
+        }, 1);
+    });
 
     function fetchAllModalNodes(selector, handler) {
         var modalCloseNodes = document.querySelectorAll(selector);
