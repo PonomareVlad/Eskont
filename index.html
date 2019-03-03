@@ -10,6 +10,13 @@
     <link href="http://eskont.com/favicon.ico" rel="icon" type="favicon.ico">
     <link href="http://eskont.com/favicon.ico" rel="shortcut icon" type="favicon.ico">
     <script src="js/jquery.min.js"></script>
+
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'
+          rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css' rel='stylesheet'>
+    <link href="css/modal.base.css" rel="stylesheet">
+    <link href="css/modal.desktop.css" media="(min-width: 1024px)" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +46,7 @@
 
 <section class="slider" style="position: relative;">
     <div class="fadeOut owl-carousel owl-theme">
-        <div class="item" style="background-image:url(img/index-bg/bg-1.jpg)">
+        <div class="item" style="background-image:url(img/projects/Ресторан/IMG_2341-02-03-19-08-03.jpeg)">
             <div class="wr-owl">
                 <div class="wrapp">
                     <div class="contener">
@@ -98,234 +105,105 @@
         </div>
     </div>
 </section>
-<section class="bg-grey project no-one-block" style="background-color: #ffffff;">
+<section class="bg-white project no-one-block" style="background-color: #ffffff;">
     <div class="wrapp">
         <div class="row" style="margin-top:0px;">
-            <div class="mebel-select">
-                <select name="tab">
-                    <option value="all">Все</option>
-                    <option value="kotted">Островки</option>
-                    <option value="gil">Витрины</option>
-                    <option value="public">Мебель</option>
-                    <option value="industry">Вывески</option>
-                    <option value="design">Декор</option>
-                </select>
-            </div>
-            <div class="tabs">
-                <div class="tab"><a href="#" rel="all">Все</a></div>
-                <div class="tab"><a href="#" rel="kotted">Островки</a></div>
-                <div class="tab"><a href="#" rel="gil">Витрины</a></div>
-                <div class="tab"><a href="#" rel="public">Мебель</a></div>
-                <div class="tab"><a href="#" rel="industry">Вывески</a></div>
-                <div class="tab"><a href="#" rel="design">Декор</a></div>
-            </div>
-            <div class="xl-sn-3 all kotted">
-                <div class="item pjc-01"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Коттедж в классическом стиле на 200 кв.м.</h3>
-                        <a class="project-a" href="project-01.html">Подробнее</a>
+            <h2><span>НАШИ ПРОЕКТЫ</span></h2>
+            <div class="row">
+                <div class="xl-sn-3">
+                    <div class="item" style="background-image: url('img/projects/Офис/1.jpg');">
+                        <div>
+                            <h3>Офис</h3>
+                            <a class="project-a" data-modal-open href="#office">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl-sn-3">
+                    <div class="item"
+                         style="background-image: url('img/projects/Ресторан/IMG_2342-02-03-19-08-03.jpeg');">
+                        <div>
+                            <h3>Ресторан</h3>
+                            <a class="project-a" data-modal-open href="#restaurant">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl-sn-3">
+                    <div class="item" style="background-image: url('img/projects/Барная стойка/69.jpg');">
+                        <div>
+                            <h3>Барная стойка</h3>
+                            <a class="project-a" data-modal-open href="#bar">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl-sn-3">
+                    <div class="item" style="background-image: url('img/projects/Барная стойка 2/58.jpg');">
+                        <div>
+                            <h3>Барная стойка 2</h3>
+                            <a class="project-a" data-modal-open href="#bar2">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl-sn-3">
+                    <div class="item" style="background-image: url('img/projects/Хлеб и булочки/64.jpg');">
+                        <div>
+                            <h3>Хлеб и булочки</h3>
+                            <a class="project-a" data-modal-open href="#bread">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl-sn-3">
+                    <div class="item" style="background-image: url('img/projects/Островок/3.jpg');">
+                        <div>
+                            <h3>Островок</h3>
+                            <a class="project-a" data-modal-open href="#island">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl-sn-3">
+                    <div class="item"
+                         style="background-image: url('img/projects/Островок аксессуаров/1 аксессуары (2).jpg');">
+                        <div>
+                            <h3>Островок аксессуаров</h3>
+                            <a class="project-a" data-modal-open href="#island-accessories">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl-sn-3">
+                    <div class="item" style="background-image: url('img/projects/островок кофе/фотография-1 (1).jpg');">
+                        <div>
+                            <h3>островок кофе</h3>
+                            <a class="project-a" data-modal-open href="#island-coffee">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl-sn-3">
+                    <div class="item"
+                         style="background-image: url('img/projects/Островок парфюм/2 парфюмерия (2).jpg');">
+                        <div>
+                            <h3>Островок парфюм</h3>
+                            <a class="project-a" data-modal-open href="#island-perfume">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl-sn-3 overflow">
+                    <div class="item" style="background-image: url('img/projects/Островок шампуни/5 (1).jpg');">
+                        <div>
+                            <h3>Островок шампуни</h3>
+                            <a class="project-a" data-modal-open href="#island-shampoo">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl-sn-3 overflow">
+                    <div class="item" style="background-image: url('img/projects/стенд/79.jpg');">
+                        <div>
+                            <h3>стенд</h3>
+                            <a class="project-a" data-modal-open href="#stand">Подробнее</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="xl-sn-3 all kotted">
-                <div class="item pjc-02"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Коттедж в стиле модерн на 200 кв.м.</h3>
-                        <a class="project-a" href="project-02.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3  all kotted">
-                <div class="item pj-16"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Коттедж в классическом стиле на 550 кв.м.</h3>
-                        <a class="project-a" href="project-17.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3  all kotted">
-                <div class="item pj-04"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Коттедж в стиле Райта на 220 кв.м.</h3>
-                        <a class="project-a" href="project-03.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3  all kotted">
-                <div class="item pj-08"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Коттедж в стиле Райта на 450 кв.м.</h3>
-                        <a class="project-a" href="project-04.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all gil">
-                <div class="item pj-01"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Жилой дом в г. Балашиха</h3>
-                        <a class="project-a" href="project-05.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all gil">
-                <div class="item pj-03"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>ЖК на Истринской улице г. Москва</h3>
-                        <a class="project-a" href="project-07.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all public">
-                <div class="item pj-10"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Отель на Рязанском проспекте</h3>
-                        <a class="project-a" href="project-11.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all public">
-                <div class="item pj-22"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Учебный центр "Бекасово"</h3>
-                        <a class="project-a" href="project-22.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all public">
-                <div class="item pj-23"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Многоуровневая парковка на ул. Воронежская</h3>
-                        <a class="project-a" href="project-26.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all public">
-                <div class="item pj-24"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Многоуровневая парковка на 187 м/м</h3>
-                        <a class="project-a" href="project-27.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all public">
-                <div class="item pj-25"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Универсальный двроец спорта. г. Ташкент.</h3>
-                        <a class="project-a" href="project-28.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all public all design">
-                <div class="item pj-15"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Отделение Сбербанка на Генерала Кузнецова</h3>
-                        <a class="project-a" href="project-06.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all public all design">
-                <div class="item pj-12"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Отделение Сбербанка на Люблинской. Москва</h3>
-                        <a class="project-a" href="project-08.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all design">
-                <div class="item pj-07"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Интерьер персонального спортзала</h3>
-                        <a class="project-a" href="project-10.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all design">
-                <div class="item pj-17"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Дизайн квартиры на 120 кв.м.</h3>
-                        <a class="project-a" href="project-14.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all public all design">
-                <div class="item pj-19"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Отделение Сбербанка на Римской</h3>
-                        <a class="project-a" href="project-16.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all design">
-                <div class="item pj-18"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Дизайн однокомнатной квартиры</h3>
-                        <a class="project-a" href="project-15.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all design">
-                <div class="item pj-09"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Интерьер комнаты отдыха в банном доме</h3>
-                        <a class="project-a" href="project-19.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all public">
-                <div class="item pj-13"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Гостиничный комплекс "Севастополь". Москва</h3>
-                        <a class="project-a" href="project-18.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all design">
-                <div class="item pj-05"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Интерьер кухни-гостинной в загородном доме.</h3>
-                        <a class="project-a" href="project-12.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all industry">
-                <div class="item pj-11"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Склад глубокой заморозки на 10800 кв.м. Москва</h3>
-                        <a class="project-a" href="project-20.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="xl-sn-3 all industry">
-                <div class="item pj-14"
-                     style="border-left: 1px solid #fff; border-right: 1px solid #fff; border-bottom: 1px solid #fff;">
-                    <div>
-                        <h3>Холодильный склад 11000 кв.м. Москва</h3>
-                        <a class="project-a" href="project-13.html">Подробнее</a>
-                    </div>
-                </div>
-            </div>
+
+            <a class="other-project" href="arckitecture.html#">Еще</a>
         </div>
     </div>
 </section>
@@ -377,7 +255,536 @@
 
     <div class="phon-me"><a href="tel:+79691950007">+7 (969) 195-00-07</a></div>
 </div>
+
+<div class="modal" id="office">
+    <div class="modal-section">
+        <div class="modal-slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper my-gallery" itemscope>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Офис/1.jpg" title="Нажмите для увеличения">
+                            <img alt="Офис" itemprop="thumbnail" src="img/projects/Офис/1.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="960x1280" href="img/projects/Офис/2.jpg" title="Нажмите для увеличения">
+                            <img alt="Офис" itemprop="thumbnail" src="img/projects/Офис/2.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Офис/3.jpg" title="Нажмите для увеличения">
+                            <img alt="Офис" itemprop="thumbnail" src="img/projects/Офис/3.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Офис/4.jpg" title="Нажмите для увеличения">
+                            <img alt="Офис" itemprop="thumbnail" src="img/projects/Офис/4.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="960x1280" href="img/projects/Офис/5.jpg" title="Нажмите для увеличения">
+                            <img alt="Офис" itemprop="thumbnail" src="img/projects/Офис/5.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="960x1280" href="img/projects/Офис/6.jpg" title="Нажмите для увеличения">
+                            <img alt="Офис" itemprop="thumbnail" src="img/projects/Офис/6.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Офис/7.jpg" title="Нажмите для увеличения">
+                            <img alt="Офис" itemprop="thumbnail" src="img/projects/Офис/7.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="960x1280" href="img/projects/Офис/8.jpg" title="Нажмите для увеличения">
+                            <img alt="Офис" itemprop="thumbnail" src="img/projects/Офис/8.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="960x1280" href="img/projects/Офис/9.jpg" title="Нажмите для увеличения">
+                            <img alt="Офис" itemprop="thumbnail" src="img/projects/Офис/9.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" title="Prev"></div>
+                <div class="swiper-button-next" title="Next"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="modal-title">Офис</span>
+                <p>Описание</p>
+                <p>Офиса</p>
+            </div>
+        </div>
+        <a class="modal-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+    </div>
+    <a class="modal-backdrop-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+</div>
+<div class="modal" id="restaurant">
+    <div class="modal-section">
+        <div class="modal-slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper my-gallery" itemscope>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="4032x3024" href="img/projects/Ресторан/IMG_2341-02-03-19-08-03.jpeg"
+                           title="Нажмите для увеличения">
+                            <img alt="Ресторан" itemprop="thumbnail"
+                                 src="img/projects/Ресторан/IMG_2341-02-03-19-08-03.jpeg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="4032x3024" href="img/projects/Ресторан/IMG_2342-02-03-19-08-03.jpeg"
+                           title="Нажмите для увеличения">
+                            <img alt="Ресторан" itemprop="thumbnail"
+                                 src="img/projects/Ресторан/IMG_2342-02-03-19-08-03.jpeg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="4032x3024" href="img/projects/Ресторан/IMG_2343-02-03-19-08-03.jpeg"
+                           title="Нажмите для увеличения">
+                            <img alt="Ресторан" itemprop="thumbnail"
+                                 src="img/projects/Ресторан/IMG_2343-02-03-19-08-03.jpeg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="4032x3024" href="img/projects/Ресторан/IMG_2344-02-03-19-08-03.jpeg"
+                           title="Нажмите для увеличения">
+                            <img alt="Ресторан" itemprop="thumbnail"
+                                 src="img/projects/Ресторан/IMG_2344-02-03-19-08-03.jpeg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" title="Prev"></div>
+                <div class="swiper-button-next" title="Next"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="modal-title">Ресторан</span>
+                <p>Описание</p>
+                <p>Ресторана</p>
+            </div>
+        </div>
+        <a class="modal-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+    </div>
+    <a class="modal-backdrop-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+</div>
+<div class="modal" id="bar">
+    <div class="modal-section">
+        <div class="modal-slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper my-gallery" itemscope>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Барная стойка/69.jpg" title="Нажмите для увеличения">
+                            <img alt="Барная стойка" itemprop="thumbnail" src="img/projects/Барная стойка/69.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Барная стойка/70.jpg" title="Нажмите для увеличения">
+                            <img alt="Барная стойка" itemprop="thumbnail" src="img/projects/Барная стойка/70.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Барная стойка/71.jpg" title="Нажмите для увеличения">
+                            <img alt="Барная стойка" itemprop="thumbnail" src="img/projects/Барная стойка/71.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Барная стойка/72.jpg" title="Нажмите для увеличения">
+                            <img alt="Барная стойка" itemprop="thumbnail" src="img/projects/Барная стойка/72.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Барная стойка/73.jpg" title="Нажмите для увеличения">
+                            <img alt="Барная стойка" itemprop="thumbnail" src="img/projects/Барная стойка/73.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Барная стойка/74.jpg" title="Нажмите для увеличения">
+                            <img alt="Барная стойка" itemprop="thumbnail" src="img/projects/Барная стойка/74.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Барная стойка/75.jpg" title="Нажмите для увеличения">
+                            <img alt="Барная стойка" itemprop="thumbnail" src="img/projects/Барная стойка/75.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Барная стойка/76.jpg" title="Нажмите для увеличения">
+                            <img alt="Барная стойка" itemprop="thumbnail" src="img/projects/Барная стойка/76.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" title="Prev"></div>
+                <div class="swiper-button-next" title="Next"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="modal-title">Барная стойка</span>
+                <p>Описание</p>
+                <p>Барной стойки</p>
+            </div>
+        </div>
+        <a class="modal-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+    </div>
+    <a class="modal-backdrop-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+</div>
+<div class="modal" id="bar2">
+    <div class="modal-section">
+        <div class="modal-slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper my-gallery" itemscope>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x854" href="img/projects/Барная стойка 2/58.jpg"
+                           title="Нажмите для увеличения">
+                            <img alt="Барная стойка" itemprop="thumbnail" src="img/projects/Барная стойка 2/58.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="854x1280" href="img/projects/Барная стойка 2/59.jpg"
+                           title="Нажмите для увеличения">
+                            <img alt="Барная стойка" itemprop="thumbnail" src="img/projects/Барная стойка 2/59.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" title="Prev"></div>
+                <div class="swiper-button-next" title="Next"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="modal-title">Барная стойка 2</span>
+                <p>Описание</p>
+                <p>Барной стойки 2</p>
+            </div>
+        </div>
+        <a class="modal-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+    </div>
+    <a class="modal-backdrop-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+</div>
+<div class="modal" id="bread">
+    <div class="modal-section">
+        <div class="modal-slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper my-gallery" itemscope>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Хлеб и булочки/62.jpg"
+                           title="Нажмите для увеличения">
+                            <img alt="Хлеб и булочки" itemprop="thumbnail" src="img/projects/Хлеб и булочки/62.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Хлеб и булочки/63.jpg"
+                           title="Нажмите для увеличения">
+                            <img alt="Хлеб и булочки" itemprop="thumbnail" src="img/projects/Хлеб и булочки/63.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/Хлеб и булочки/64.jpg"
+                           title="Нажмите для увеличения">
+                            <img alt="Хлеб и булочки" itemprop="thumbnail" src="img/projects/Хлеб и булочки/64.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" title="Prev"></div>
+                <div class="swiper-button-next" title="Next"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="modal-title">Хлеб и булочки</span>
+                <p>Описание</p>
+                <p>Хлеба и булочек</p>
+            </div>
+        </div>
+        <a class="modal-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+    </div>
+    <a class="modal-backdrop-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+</div>
+<div class="modal" id="island">
+    <div class="modal-section">
+        <div class="modal-slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper my-gallery" itemscope>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="4592x3056" href="img/projects/Островок/3.jpg" title="Нажмите для увеличения">
+                            <img alt="Островок" itemprop="thumbnail" src="img/projects/Островок/3.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" title="Prev"></div>
+                <div class="swiper-button-next" title="Next"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="modal-title">Островок</span>
+                <p>Описание</p>
+                <p>Островка</p>
+            </div>
+        </div>
+        <a class="modal-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+    </div>
+    <a class="modal-backdrop-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+</div>
+<div class="modal" id="island-accessories">
+    <div class="modal-section">
+        <div class="modal-slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper my-gallery" itemscope>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1988x1361" href="img/projects/Островок аксессуаров/1 аксессуары (2).jpg"
+                           title="Нажмите для увеличения">
+                            <img alt="Островок аксессуаров" itemprop="thumbnail"
+                                 src="img/projects/Островок аксессуаров/1 аксессуары (2).jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" title="Prev"></div>
+                <div class="swiper-button-next" title="Next"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="modal-title">Островок аксессуаров</span>
+                <p>Описание</p>
+                <p>Островок аксессуаров</p>
+            </div>
+        </div>
+        <a class="modal-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+    </div>
+    <a class="modal-backdrop-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+</div>
+<div class="modal" id="island-coffee">
+    <div class="modal-section">
+        <div class="modal-slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper my-gallery" itemscope>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="4608x3456" href="img/projects/островок кофе/фотография-1 (1).jpg"
+                           title="Нажмите для увеличения">
+                            <img alt="островок кофе" itemprop="thumbnail"
+                                 src="img/projects/островок кофе/фотография-1 (1).jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" title="Prev"></div>
+                <div class="swiper-button-next" title="Next"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="modal-title">островок кофе</span>
+                <p>Описание</p>
+                <p>островок кофе</p>
+            </div>
+        </div>
+        <a class="modal-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+    </div>
+    <a class="modal-backdrop-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+</div>
+<div class="modal" id="island-perfume">
+    <div class="modal-section">
+        <div class="modal-slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper my-gallery" itemscope>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1919x1280" href="img/projects/Островок парфюм/2 парфюмерия (2).jpg"
+                           title="Нажмите для увеличения">
+                            <img alt="Островок парфюм" itemprop="thumbnail"
+                                 src="img/projects/Островок парфюм/2 парфюмерия (2).jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" title="Prev"></div>
+                <div class="swiper-button-next" title="Next"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="modal-title">Островок парфюм</span>
+                <p>Описание</p>
+                <p>Островок парфюм</p>
+            </div>
+        </div>
+        <a class="modal-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+    </div>
+    <a class="modal-backdrop-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+</div>
+<div class="modal" id="island-shampoo">
+    <div class="modal-section">
+        <div class="modal-slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper my-gallery" itemscope>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1919x1280" href="img/projects/Островок парфюм/2 парфюмерия (2).jpg"
+                           title="Нажмите для увеличения">
+                            <img alt="Островок шампуни" itemprop="thumbnail"
+                                 src="img/projects/Островок парфюм/2 парфюмерия (2).jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" title="Prev"></div>
+                <div class="swiper-button-next" title="Next"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="modal-title">Островок шампуни</span>
+                <p>Описание</p>
+                <p>Островок шампуни</p>
+            </div>
+        </div>
+        <a class="modal-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+    </div>
+    <a class="modal-backdrop-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+</div>
+<div class="modal" id="stand">
+    <div class="modal-section">
+        <div class="modal-slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper my-gallery" itemscope>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/стенд/79.jpg" title="Нажмите для увеличения">
+                            <img alt="стенд" itemprop="thumbnail" src="img/projects/стенд/79.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/стенд/80.jpg" title="Нажмите для увеличения">
+                            <img alt="стенд" itemprop="thumbnail" src="img/projects/стенд/80.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="960x1280" href="img/projects/стенд/81.jpg" title="Нажмите для увеличения">
+                            <img alt="стенд" itemprop="thumbnail" src="img/projects/стенд/81.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="960x1280" href="img/projects/стенд/82.jpg" title="Нажмите для увеличения">
+                            <img alt="стенд" itemprop="thumbnail" src="img/projects/стенд/82.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="960x1280" href="img/projects/стенд/83.jpg" title="Нажмите для увеличения">
+                            <img alt="стенд" itemprop="thumbnail" src="img/projects/стенд/83.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="960x1280" href="img/projects/стенд/84.jpg" title="Нажмите для увеличения">
+                            <img alt="стенд" itemprop="thumbnail" src="img/projects/стенд/84.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="960x1280" href="img/projects/стенд/85.jpg" title="Нажмите для увеличения">
+                            <img alt="стенд" itemprop="thumbnail" src="img/projects/стенд/85.jpg"/>
+                        </a>
+                    </li>
+                    <li class="swiper-slide" itemprop="associatedMedia" itemscope>
+                        <a data-size="1280x960" href="img/projects/стенд/86.jpg" title="Нажмите для увеличения">
+                            <img alt="стенд" itemprop="thumbnail" src="img/projects/стенд/86.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" title="Prev"></div>
+                <div class="swiper-button-next" title="Next"></div>
+            </div>
+        </div>
+        <div class="modal-content-wrapper">
+            <div class="modal-content">
+                <span class="modal-title">стенд</span>
+                <p>Описание</p>
+                <p>стенд</p>
+            </div>
+        </div>
+        <a class="modal-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+    </div>
+    <a class="modal-backdrop-close" data-modal-close href="#" title="Закрыть окно">Закрыть окно</a>
+</div>
+
+<div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+    <!-- Background of PhotoSwipe.
+        It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/mine.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
+<script defer src="js/modal.js"></script>
 </body>
 </html>
