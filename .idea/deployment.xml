@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="Bauprice" traceLevel="ERRORS">
+  <component name="PublishConfigData" autoUpload="Always" serverName="Bauprice" traceLevel="ERRORS" showAutoUploadSettingsWarning="false">
     <serverData>
+      <paths name="Bau-price">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Bauprice">
         <serverdata>
           <mappings>
