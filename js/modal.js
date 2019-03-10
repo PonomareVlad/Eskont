@@ -248,7 +248,8 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
     }
 };
 
-window.addEventListener("load", function () {
+// window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
     fetchAllModalNodes('[data-modal-open]', openModal);
 
