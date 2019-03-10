@@ -745,7 +745,7 @@ section.bg-grey {
 }
 
 .project.bg-white .item {
-    border-color: transparent;
+    border-color: white;
     background-repeat: no-repeat;
 }
 

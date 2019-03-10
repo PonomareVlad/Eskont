@@ -165,6 +165,12 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
             fullscreenEl: true,
             zoomEl: true,
             shareEl: true,
+            shareButtons: [
+                {id: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
+                {id: 'vk', label: 'ВКонтакте', url: 'https://vk.com/share.php?title={{text}}&url={{url}}'},
+                {id: 'whatsapp', label: 'WhatsApp', url: 'whatsapp://send?text={{url}}'},
+                {id: 'download', label: 'Download image', url: '{{raw_image_url}}', download: true}
+            ],
             counterEl: false,
             arrowEl: true,
             preloaderEl: true,
