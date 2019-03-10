@@ -3,6 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="5067e4e8-3c6d-403c-ba00-a9d78da6c756" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/Барная стойка 2/-8 — копия.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/Барная стойка 2/-8.cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/Барная стойка/69 — копия.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/Барная стойка/69.cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/Островок аксессуаров/1 аксессуары (2) — копия.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/Островок аксессуаров/1 аксессуары (2).cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/Островок парфюм/2 парфюмерия (2) — копия.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/Островок парфюм/2 парфюмерия (2).cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/Островок шампуни/5 (1) — копия.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/Островок шампуни/5 (1).cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/Островок/-1-3 (1) — копия.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/Островок/-1-3 (1).cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/Офис/-1 — копия.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/Офис/-1.cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/Хлеб и булочки/-15 — копия.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/Хлеб и булочки/-15.cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/островок кофе/фотография-1 (1) — копия.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/островок кофе/фотография-1 (1).cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/стенд/79 — копия.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/стенд/79.cover.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="227" column="30" lean-forward="true" selection-start-line="227" selection-start-column="30" selection-end-line="227" selection-end-column="30" />
+            <state relative-caret-position="366">
+              <caret line="215" column="37" lean-forward="true" selection-start-line="215" selection-start-column="37" selection-end-line="215" selection-end-column="37" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#link#6;n#head#0;n#html#0;n#!!top" />
@@ -584,7 +594,7 @@
       <workItem from="1551564798234" duration="13426000" />
       <workItem from="1552138834078" duration="1909000" />
       <workItem from="1552174784830" duration="16000" />
-      <workItem from="1552180261271" duration="3634000" />
+      <workItem from="1552180261271" duration="3828000" />
     </task>
     <task id="LOCAL-00001" summary="Modal prototype">
       <created>1549595497440</created>
@@ -761,11 +771,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552184672820</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Optimized images">
+      <created>1552185367986</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1552185367986</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47179000" />
+    <option name="totallyTimeSpent" value="47373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -839,7 +856,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Modal prototype" />
     <MESSAGE value="Scroll disable for iOS" />
     <MESSAGE value="Slider height changed" />
     <MESSAGE value="Close icon styles update" />
@@ -864,7 +880,8 @@
     <MESSAGE value="Changes from production" />
     <MESSAGE value="Portfolio update" />
     <MESSAGE value="Removed links" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed links" />
+    <MESSAGE value="Optimized images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized images" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1173,8 +1190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="227" column="30" lean-forward="true" selection-start-line="227" selection-start-column="30" selection-end-line="227" selection-end-column="30" />
+        <state relative-caret-position="366">
+          <caret line="215" column="37" lean-forward="true" selection-start-line="215" selection-start-column="37" selection-end-line="215" selection-end-column="37" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#link#6;n#head#0;n#html#0;n#!!top" />
