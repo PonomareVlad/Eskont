@@ -4,7 +4,7 @@
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;fill:#272525;}
-	.st1{fill:none;stroke:#2C9E47;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FF6B00;stroke-width:2;stroke-miterlimit:10;}
 </style>
 <rect x="9" y="9" class="st0" width="82" height="82"/>
 <rect x="7.5" y="7.3" class="st1" width="84.9" height="84.9"/>

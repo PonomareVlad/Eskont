@@ -4,13 +4,9 @@
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;fill:#272525;}
-	.st1{fill:none;stroke:#2C9E47;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FF6B00;stroke-width:2;stroke-miterlimit:10;}
 </style>
 <rect x="9" y="9" class="st0" width="82" height="82"/>
-<image style="display:none;overflow:visible;" width="626" height="626" xlink:href="../../../../../Downloads/stationery-stacked-papers_318-45584.jpg"  transform="matrix(0.1328 0 0 0.1328 8.4323 8.4323)">
-</image>
-<image style="display:none;overflow:visible;" width="531" height="503" xlink:href="../../../../../Downloads/LcKd7GMca.jpeg"  transform="matrix(0.1602 0 0 0.1602 7.5 9.6667)">
-</image>
 <polygon class="st1" points="79.8,53.8 9.5,53.8 24.8,28.8 91.8,28.8 "/>
 <path class="st1" d="M24.8,35.8"/>
 <polyline class="st1" points="88.4,35.8 91.8,35.8 79.8,60.8 9.5,60.8 13.8,53.8 "/>

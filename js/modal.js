@@ -6,6 +6,7 @@ function initSwiper(slider, photoSwipeInit = true) {
         centeredSlides: true,
         observer: true,
         observeParents: true,
+		touchEventsTarget: 'container',
         navigation: {
             nextEl: slider.querySelector('.swiper-button-next'),
             prevEl: slider.querySelector('.swiper-button-prev')
@@ -163,14 +164,16 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
             closeEl: true,
             captionEl: true,
             fullscreenEl: true,
-            zoomEl: true,
-            shareEl: true,
-            shareButtons: [
-                {id: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
-                {id: 'vk', label: 'ВКонтакте', url: 'https://vk.com/share.php?title={{text}}&url={{url}}'},
-                {id: 'whatsapp', label: 'WhatsApp', url: 'whatsapp://send?text={{url}}'},
-                {id: 'download', label: 'Download image', url: '{{raw_image_url}}', download: true}
-            ],
+            //shareEl: true,
+            zoomEl: false,
+            maxSpreadZoom: 1,
+            getDoubleTapZoom: function(isMouseClick, item) {
+                if(isMouseClick) {
+                    return item.initialZoomLevel;
+                } else {
+                    return item.initialZoomLevel < 0.7 ? 1 : 1.5;
+                }
+            },
             counterEl: false,
             arrowEl: true,
             preloaderEl: true,
@@ -290,8 +293,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-window.addEventListener('popstate', function (event) {
-    document.body.classList.toggle('disableScroll', !!location.hash);
-});
-
-document.body.classList.toggle('disableScroll', !!location.hash);
