@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="Bauprice" traceLevel="ERRORS" showAutoUploadSettingsWarning="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="Eskont" traceLevel="ERRORS" showAutoUploadSettingsWarning="false">
     <serverData>
       <paths name="Bau-price">
         <serverdata>
@@ -13,6 +13,13 @@
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Eskont">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/bau-price.ru" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
