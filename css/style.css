@@ -1771,10 +1771,10 @@ breadcrumbs span{
 	padding: 10px 35px 10px 35px
 }
 
-@media screen and (min-width: 1950px) {
+@media screen and (min-width: 1320px) {
 	.wrapp, section.slider .item .wrapp{
 		padding: 0 40px;
-		width: 1820px;
+		width: 1190px;
 		margin: 0 auto;
 	}
 }
